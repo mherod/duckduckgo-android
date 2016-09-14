@@ -1,9 +1,10 @@
 buildscript {
   repositories {
+    jcenter()
     mavenCentral()
   }
   dependencies {
-    classpath 'com.android.tools.build:gradle:1.1.3'
+    classpath 'com.android.tools.build:gradle:2.2.0-rc2'
     classpath files ('libs/gradle-witness.jar')
   }
 }
@@ -12,7 +13,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'witness'
 
 android {
-  compileSdkVersion 23
+  compileSdkVersion 24
   buildToolsVersion "23.0.3"
 
   repositories {
